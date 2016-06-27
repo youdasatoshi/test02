@@ -1,6 +1,6 @@
 
-window.APP_KEY = "";
-window.CLIENT_KEY = "";
+window.APP_KEY = "1725c76e9152f467fc3fd321a4ebe3c28c4e3f7ac9541d1b4b2d740ac5c2d8d0";
+window.CLIENT_KEY = "b22175504f8564587440a56d92e0d86ee2d32014e44abfd196c4712a00faad32";
 
 NCMB.initialize(APP_KEY, CLIENT_KEY);
 
@@ -55,3 +55,4 @@ function hideSpinner() {
         window.spinner = null;
     }
 }
+

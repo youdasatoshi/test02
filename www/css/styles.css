@@ -162,11 +162,11 @@ body > div.table > div.table-body > div.table-cell > div.table-cell-inner > .tab
   font-size: 1rem;
   color: #ccc;
 }
-body > div.table > div.table-body > div.table-cell > div.table-cell-inner > p {
+/* body > div.table > div.table-body > div.table-cell > div.table-cell-inner > p {
   position: absolute;
-  top: 20px;
+  top: 45px;
   left: 0px;
-}
+} */
 body > div.table > div.table-body > div.table-cell > div.table-cell-inner > p.form-label {
   width: 30%;
   color: #999;

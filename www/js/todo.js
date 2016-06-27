@@ -30,7 +30,7 @@ var TODOListController = {
                 todo : todo
             }, {
                 success : function() {
-                    alert("TODO追加できました");
+                    alert("TODO追加できましたyo-");
                     TODOListController.refresh();
                 }, 
                 error : function() {
@@ -62,7 +62,13 @@ var TODOListController = {
         todoArray.map(function(todo) {
             var tableCell = tableCellTemplate.cloneNode(true);
             console.log(todo);
-            $('p', tableCell).text(todo.get('todo'));
+            $('#todo', tableCell).text(todo.get('todo'));
+            $('#name', tableCell).text(todo.get('name'));
+            $('#number', tableCell).text(todo.get('number'));
+            $('#seibetu', tableCell).text(todo.get('seibetu'));
+            $('#gakubu', tableCell).text(todo.get('gakubu'));
+            $('#gakka', tableCell).text(todo.get('gakka'));
+            $('#syussinn', tableCell).text(todo.get('syussinn'));
 
             return tableCell;
         }).forEach(function(tableCell) {
