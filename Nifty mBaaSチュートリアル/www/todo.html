@@ -7,7 +7,7 @@
     
     <title>ニフティクラウドmobile backend チュートリアルアプリ</title>
     <link rel="stylesheet" href="css/styles.css">
-    
+
     <script src="components/loader.js"></script>
 </head>
 <body>
@@ -51,16 +51,14 @@
     </div>
 </div>
 
-<div class="no-border-button tappable" id="add-todo">
-    ＋ TODOを追加する
-</div>
+
 
 <div class="templates">
 
     <div class="table-cell" id="table-cell-template">
         <div class="table-cell-inner">
-            <p id="todo">           
-            </p>
+            <p>自己紹介 : <span id="todo">           
+            </span></p>
             <p id="name">
             </p>
             <p id="number">
@@ -73,10 +71,23 @@
             </p>
             <p id="syussinn">
             </p>
+            <img src="" alt="" id="fileName">
         </div>
     </div>
-</div>
 
+</div>
+<form name="form1" id="id_form1" action="">
+    名前<input name="name" id="name" type="text" value="" />
+    学籍番号<input name="number" id="number" type="text" value="" />
+    性別<input name="seibetu" id="seibetu" type="text" value="" />
+    学部<input name="gakubu" id="gakubu" type="text" value="" />
+    学科<input name="gakka" id="gakka" type="text" value="" />
+    出身<input name="syussinn" id="syussinn" type="text" value="" />
+</form>
+
+<div class="no-border-button tappable" id="add-todo">
+    ＋ TODOを追加する
+</div>
 
 <script src="js/vendor/ncmb-1.2.1.min.js"></script>
 <script src="js/vendor/tappable.js"></script>
