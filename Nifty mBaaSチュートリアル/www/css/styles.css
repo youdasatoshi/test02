@@ -30,7 +30,7 @@ html {
 
 body {
   width: 100%;
-  height: 100%;    
+  height: 100%;
   background-color: #F0F0F0;
   color: #333;
   font-size: 34px;
@@ -126,7 +126,7 @@ body > div.table > div.table-body {
   border-top: 1px solid #ccc;
 }
 body > div.table > div.table-body > div.table-cell {
-  height: 88px;
+  height: 400px;
   position: relative;
   -webkit-transition: background-color 0.3s linear;
 }
@@ -146,7 +146,7 @@ body > div.table > div.table-body > div.table-cell > div.table-cell-inner {
   margin-left: 30px;
   position: relative;
   border-top: 1px solid #ccc;
-  height: 88px;
+  height: 400px;
   overflow: hidden;
 }
 body > div.table > div.table-body > div.table-cell > div.table-cell-inner > .table-cell-title {

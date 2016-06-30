@@ -1,6 +1,13 @@
 
 var TODO = NCMB.Object.extend('TODO');
 
+var currentUser = NCMB.User.current();
+if (currentUser) {
+    console.log("ログイン中のユーザー: " + currentUser.get("userName"));
+} else {
+    console.log("未ログインまたは取得に失敗");
+}
+
 var TODOListController = {
 
     init : function() {
@@ -46,7 +53,7 @@ var TODOListController = {
                 success : function() {
                     alert("TODO追加できましたyo-");
                     TODOListController.refresh();
-                }, 
+                },
                 error : function() {
                     alert("エラーがおきました:");
                 }
@@ -66,7 +73,7 @@ var TODOListController = {
             error : function(error) {
                 console.log(JSON.stringify(arguments));
             }
-        }); 
+        });
     },
 
     render : function(todoArray) {
@@ -97,6 +104,8 @@ var TODOListController = {
     }
 };
 
+var currentUser = NCMB.User.current();
+console.log(currentUser);
 // $('#sub').on('click',function(){
 //         var pupu = $('#score').val();
 //         console.log(pupu);

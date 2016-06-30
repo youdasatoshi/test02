@@ -64,19 +64,19 @@ function hideSpinner() {
     }
 }
 
-// NCMB.Objectのサブクラスを生成
-var GameScore = ncmb.Object.extend("GameScore");
-
-// クラスの新しいインスタンスを生成
-var gameScore = new GameScore();
-
-gameScore.set("score", 1337)
-         .set("playerName", "Taro")
-         .set("cheatMode", false)
-         .save()
-         .then(function(gameScore){
-          // 保存後の処理
-         })
-         .catch(function(err){
-          // エラー処理
-         });
+// // NCMB.Objectのサブクラスを生成
+// var GameScore = ncmb.Object.extend("GameScore");
+//
+// // クラスの新しいインスタンスを生成
+// var gameScore = new GameScore();
+//
+// gameScore.set("score", 1337)
+//          .set("playerName", "Taro")
+//          .set("cheatMode", false)
+//          .save()
+//          .then(function(gameScore){
+//           // 保存後の処理
+//          })
+//          .catch(function(err){
+//           // エラー処理
+//          });

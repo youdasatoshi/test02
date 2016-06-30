@@ -1,4 +1,4 @@
- 
+
 var UserPageController = {
     init : function() {
         $(function() {
@@ -19,6 +19,7 @@ var UserPageController = {
         var currentUser = NCMB.User.current();
         if (currentUser) {
             console.log(currentUser);
+            console.log(currentUser.attributes);
             $('#name').text(currentUser.get('userName'));
             $('#number').text(currentUser.get('number'));
             $('#seibetu').text(currentUser.get('seibetu'));
@@ -39,3 +40,10 @@ var UserPageController = {
     }
 };
 
+// var currentUser1 = ncmb.User.getCurrentUser();
+// if (currentUser1) {
+//     console.log("ログイン中のユーザー: " + currentUser1.get("userName"));
+// } else {
+//     console.log("未ログインまたは取得に失敗");
+// }
+// console.log("ok");
