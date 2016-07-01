@@ -19,7 +19,7 @@ var UserPageController = {
         var currentUser = NCMB.User.current();
         if (currentUser) {
             console.log(currentUser);
-            console.log(currentUser.attributes);
+            console.log(currentUser.id);
             $('#name').text(currentUser.get('userName'));
             $('#number').text(currentUser.get('number'));
             $('#seibetu').text(currentUser.get('seibetu'));

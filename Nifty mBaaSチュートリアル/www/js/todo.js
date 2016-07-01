@@ -48,7 +48,8 @@ var TODOListController = {
                 seibetu : seibetu,
                 gakubu : gakubu,
                 gakka : gakka,
-                syussinn : syussinn
+                syussinn : syussinn,
+                currentid : currentUser.id
             }, {
                 success : function() {
                     alert("TODO追加できましたyo-");
@@ -80,6 +81,9 @@ var TODOListController = {
         var tableCellTemplate = $('#table-cell-template')[0];
         var fragment = document.createDocumentFragment();
 
+
+if(TODO(currentid) == currentUser.id){
+
         todoArray.map(function(todo) {
             var tableCell = tableCellTemplate.cloneNode(true);
             console.log(todo);
@@ -93,10 +97,16 @@ var TODOListController = {
             // $('#fileName', tableCell).text(todo.get('fileName'));
             $('#fileName', tableCell).attr('src',todo.get('fileName'));
 
+
             return tableCell;
         }).forEach(function(tableCell) {
             fragment.appendChild(tableCell);
         });
+
+
+}
+
+
 
         $('.table-body').empty().append(fragment);
 
@@ -104,8 +114,8 @@ var TODOListController = {
     }
 };
 
-var currentUser = NCMB.User.current();
-console.log(currentUser);
+// var currentUser = NCMB.User.current();
+// console.log(currentUser);
 // $('#sub').on('click',function(){
 //         var pupu = $('#score').val();
 //         console.log(pupu);
