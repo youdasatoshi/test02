@@ -82,7 +82,7 @@ var TODOListController = {
         var fragment = document.createDocumentFragment();
 
 
-if(TODO(currentid) == currentUser.id){
+// if(TODO(currentid) == currentUser.id){
 
         todoArray.map(function(todo) {
             var tableCell = tableCellTemplate.cloneNode(true);
@@ -104,7 +104,7 @@ if(TODO(currentid) == currentUser.id){
         });
 
 
-}
+// }
 
 
 
