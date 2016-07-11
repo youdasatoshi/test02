@@ -67,7 +67,7 @@ var TODOListController = {
         showSpinner();
 
         var query = new NCMB.Query(TODO);
-        query.find({
+        query.equalTo('currentid','aa').find({
             success : function(results) {
                 TODOListController.render(results);
             },
