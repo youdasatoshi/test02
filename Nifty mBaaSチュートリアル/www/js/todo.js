@@ -67,7 +67,7 @@ var TODOListController = {
         showSpinner();
 
         var query = new NCMB.Query(TODO);
-        query.equalTo('currentid','aa').find({
+        query.equalTo('currentid','pDGqfPdjS21iV9Aj').find({
             success : function(results) {
                 TODOListController.render(results);
             },
@@ -94,6 +94,8 @@ var TODOListController = {
             $('#gakubu', tableCell).text(todo.get('gakubu'));
             $('#gakka', tableCell).text(todo.get('gakka'));
             $('#syussinn', tableCell).text(todo.get('syussinn'));
+            $('#edit', tableCell).prop('href', 'todo_edit.html?id='+todo.id);
+console.log(todo.id,$('#edit', tableCell));
             // $('#fileName', tableCell).text(todo.get('fileName'));
             $('#fileName', tableCell).attr('src',todo.get('fileName'));
 

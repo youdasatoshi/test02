@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta http-equiv="Content-Security-Policy" content="default-src * data:; style-src * 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval'">
+
+    <title>ユーザー</title>
+    <link rel="stylesheet" href="css/styles.css">
+
+    <script src="components/loader.js"></script>
+</head>
+<body>
+
+<header id="top-toolbar">
+    <h1>ユーザー</h1>
+
+    <div class="top-toolbar-right">
+        <div class="toolbar-button tappable" id="logout">ログアウト</div>
+    </div>
+</header>
+
+<div class="table">
+    <div class="table-header">
+        <h2>ユーザー情報</h2>
+    </div>
+    <div class="table-body">
+        <div class="table-cell">
+            <div class="table-cell-inner">
+                <p class="label">ユーザー名</p>
+                <div class="table-cell-content-right">
+                    <input type="text" name="name" class="bold" id="name"></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="table-cell">
+            <div class="table-cell-inner">
+                <p class="label">学籍番号</p>
+                <div class="table-cell-content-right">
+                    <input type="text" name="number" id="number"></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="table-cell">
+            <div class="table-cell-inner">
+                <p class="label">seibetu</p>
+                <div class="table-cell-content-right">
+                    <p class="bold" id="seibetu"></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="table-cell">
+            <div class="table-cell-inner">
+                <p class="label">gakubu</p>
+                <div class="table-cell-content-right">
+                    <p class="bold" id="gakubu"></p>
+                </div>
+            </div>
+        </div>
+        <div class="table-cell">
+            <div class="table-cell-inner">
+                <p class="label">gakka</p>
+                <div class="table-cell-content-right">
+                    <p class="bold" id="gakka"></p>
+                </div>
+            </div>
+        </div>
+        <div class="table-cell">
+            <div class="table-cell-inner">
+                <p class="label">syussinn</p>
+                <div class="table-cell-content-right">
+                    <p class="bold" id="syussinn"></p>
+                </div>
+            </div>
+        </div>
+        <div class="table-cell">
+            <div class="table-cell-inner">
+                <p class="label">todo</p>
+                <div class="table-cell-content-right">
+                    <p class="bold" id="todo"></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="table-cell">
+            <div class="table-cell-inner">
+                <p class="label">img</p>
+                <div class="table-cell-content-right">
+                    <img src="" alt="" id="fileName">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="table">
+    <div class="table-header">
+        <h2>メモ</h2>
+    </div>
+    <div class="table-body">
+        <div class="table-cell tappable" id="memo-cell">
+            <div class="table-cell-inner">
+                <textarea id="memo"></textarea>
+            </div>
+        </div>
+    </div>
+</div>
+
+<button type="button" id="edit">更新</button>
+
+<br />
+<br />
+
+<script src="js/vendor/ncmb-1.2.1.min.js"></script>
+<script src="js/vendor/tappable.js"></script>
+<script src="js/vendor/zepto.min.js"></script>
+<script src="js/vendor/spin.min.js"></script>
+<script src="js/base.js"></script>
+<script src="js/user_edit.js"></script>
+<script>UserPageController.init();</script>
+
+</body>
+</html>
