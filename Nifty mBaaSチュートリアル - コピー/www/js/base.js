@@ -1,8 +1,16 @@
 
-window.APP_KEY = "ff15defccefbbea7981d90a256b55d22c86a3fa8435f28225d4c5e553f1687ce";
+window.APP_KEY = "1725c76e9152f467fc3fd321a4ebe3c28c4e3f7ac9541d1b4b2d740ac5c2d8d0";
 window.CLIENT_KEY = "b22175504f8564587440a56d92e0d86ee2d32014e44abfd196c4712a00faad32";
 
-NCMB.initialize(APP_KEY, CLIENT_KEY);
+
+
+
+
+var ncmb = new NCMB.initialize(APP_KEY, CLIENT_KEY);
+
+
+
+
 
 $(function() {
     tappable('.tappable', {
@@ -55,3 +63,20 @@ function hideSpinner() {
         window.spinner = null;
     }
 }
+
+// // NCMB.Objectのサブクラスを生成
+// var GameScore = ncmb.Object.extend("GameScore");
+//
+// // クラスの新しいインスタンスを生成
+// var gameScore = new GameScore();
+//
+// gameScore.set("score", 1337)
+//          .set("playerName", "Taro")
+//          .set("cheatMode", false)
+//          .save()
+//          .then(function(gameScore){
+//           // 保存後の処理
+//          })
+//          .catch(function(err){
+//           // エラー処理
+//          });
