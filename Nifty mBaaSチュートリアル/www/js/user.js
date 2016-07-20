@@ -23,11 +23,12 @@ var UserPageController = {
             $('#name').text(currentUser.get('userName'));
             $('#number').text(currentUser.get('number'));
             $('#seibetu').text(currentUser.get('seibetu'));
+            $('#gakunen').text(currentUser.get('gakunen'));
             $('#gakubu').text(currentUser.get('gakubu'));
             $('#gakka').text(currentUser.get('gakka'));
             $('#syussinn').text(currentUser.get('syussinn'));
-            $('#todo').text(currentUser.get('todo'));
-            $('#memo').text(currentUser.get('memo'));
+            // $('#todo').text(currentUser.get('todo'));
+            $('#syoukai').text(currentUser.get('syoukai'));
             $('#fileName').attr('src',currentUser.get('fileName'));
         } else {
             alert("ログインしていません");

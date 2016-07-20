@@ -26,12 +26,13 @@ var UserPageController = {
             console.log(currentUser.id);
             $('#name').val(currentUser.get('userName'));
             $('#number').val(currentUser.get('number'));
-            $('#seibetu').text(currentUser.get('seibetu'));
-            $('#gakubu').text(currentUser.get('gakubu'));
-            $('#gakka').text(currentUser.get('gakka'));
-            $('#syussinn').text(currentUser.get('syussinn'));
-            $('#todo').text(currentUser.get('todo'));
-            $('#memo').text(currentUser.get('memo'));
+            $('#seibetu').val(currentUser.get('seibetu'));
+            $('#gakunen').val(currentUser.get('gakunen'));
+            $('#gakubu').val(currentUser.get('gakubu'));
+            $('#gakka').val(currentUser.get('gakka'));
+            $('#syussinn').val(currentUser.get('syussinn'));
+            $('#syoukai').val(currentUser.get('syoukai'));
+            // $('#memo').text(currentUser.get('memo'));
             $('#fileName').attr('src',currentUser.get('fileName'));
         } else {
             alert("ログインしていません");
@@ -47,6 +48,13 @@ var UserPageController = {
       console.log("text");
       var currentUser = NCMB.User.current();
       currentUser.set('userName', $("#name").val());
+      currentUser.set('number', $("#number").val());
+      currentUser.set('seibetu', $("#seibetu").val());
+      currentUser.set('gakunen', $("#gakunen").val());
+      currentUser.set('gakubu', $("#gakubu").val());
+      currentUser.set('gakka', $("#gakka").val());
+      currentUser.set('syussinn', $("#syussinn").val());
+      currentUser.set('syoukai', $("#syoukai").val());
       currentUser.save().then(function(){
         location.href = 'user.html';
       });
